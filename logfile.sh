@@ -14,4 +14,4 @@ do
    echo "deleting file :  $line
    rm -r $line
 
-done<<<$FILES_TO_DELETE
+done <<< $FILES_TO_DELETE
