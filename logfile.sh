@@ -9,9 +9,9 @@ if [ ! -d $SOURCE_FILE ]
  echo "folder not exit"
 fi
 FILES_TO_DELETE=$(find $SOURCE_FILE -type f -mtime +14 -name "*.log")
-while IFS read -r line
+while IFS= read -r line
 do 
-   echo "deleting file :  $line
+   echo "deleting file :  $line "
    rm -r $line
 
 done <<< $FILES_TO_DELETE
