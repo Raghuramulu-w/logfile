@@ -4,7 +4,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 SOURCE_FILE="/tmp/sourcefile.log"
-if [ ! -d $SOURCE_FILE]
+if [ ! -d $SOURCE_FILE ]
  then 
  echo "folder not exit"
 fi
